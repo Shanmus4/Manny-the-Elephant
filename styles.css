@@ -1,0 +1,26 @@
+.body {
+  background-color: #ffd965;
+}
+
+.div-block {
+  width: 200px;
+  height: 200px;
+  margin-top: 260px;
+  margin-left: 130px;
+}
+
+.div-block.stories {
+  border-radius: 20px;
+  background-image: url("https://uploads-ssl.webflow.com/63b6565f72316521d012dbf3/63b65f7f89ebb45ef13c9c36_Crow%20Cover.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: scroll;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+}
+
+.div-block.stories:hover {
+  overflow: visible;
+  width: 220px;
+  height: 220px;
+}
