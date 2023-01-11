@@ -1,19 +1,19 @@
-html{
+html {
   overflow-x: hidden;
 }
-.titlediv{
+.titlediv {
   width: 100vw;
   height: 200vh;
   background-color: aqua;
 }
 
-.lottiewrapper{
+.lottiewrapper {
   position: sticky;
   width: 100vw;
   height: 56.25vw;
   top: 0;
 }
 
-.titlelottie{
+.titlelottie {
   position: absolute;
 }
