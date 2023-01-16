@@ -1,13 +1,3 @@
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.querySelector("#loader").style.visibility = "visible";
-  } else {
-    document.querySelector("#loader").style.display = "none";
-    document.querySelector("body").style.visibility = "visible";
-  }
-};
-
 LottieInteractivity.create({
   player: "#titlelottie",
   mode: "scroll",
@@ -27,9 +17,9 @@ LottieInteractivity.create({
 });
 
 LottieInteractivity.create({
-  player: "#frame2lottie",
+  player: "#f2lottie",
   mode: "scroll",
-  container: "#frame2div",
+  container: "#f2div",
   actions: [
     {
       visibility: [0, 0.2],
@@ -45,9 +35,9 @@ LottieInteractivity.create({
 });
 
 LottieInteractivity.create({
-  player: "#frame2lottie",
+  player: "#f2lottie",
   mode: "chain",
-  container: "#frame2div",
+  container: "#f2div",
 
   actions: [
     {
