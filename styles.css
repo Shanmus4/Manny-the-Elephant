@@ -4,7 +4,6 @@ html {
 .titlediv {
   width: 100vw;
   height: 200vh;
-  background-color: aqua;
 }
 
 .lottiewrapper {
@@ -14,6 +13,7 @@ html {
   top: 0;
 }
 
-.titlelottie {
-  position: absolute;
+.frame2div {
+  width: 100vw;
+  height: 200vh;
 }
