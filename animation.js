@@ -158,5 +158,123 @@ LottieInteractivity.create({
       state: "click",
       frames: [96, 108],
     },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+    },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [72, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [84, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [96, 108],
+    },
   ],
 });
