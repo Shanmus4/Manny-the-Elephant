@@ -13,6 +13,12 @@
     <link href="Assets/Favicon/hero Icon-1.png" rel="apple-touch-icon" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body style="margin: 0; background-color: rgb(246, 220, 200)">
@@ -41,8 +47,12 @@
           src="Assets/Frame 2/Frame 2.json"
         ></lottie-player>
       </div>
-      <p class="f2text2">Click to pass the ball</p>
     </div>
-    <script src="script.js"></script>
+    <div class="f3div" id="f3div">
+      <div class="lottiewrapper">
+        <lottie-player id="f3lottie" class="f3lottie" src=""></lottie-player>
+      </div>
+    </div>
+    <script src="animation.js"></script>
   </body>
 </html>
