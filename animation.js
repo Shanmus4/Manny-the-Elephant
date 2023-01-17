@@ -27,7 +27,7 @@ LottieInteractivity.create({
       frames: [0],
     },
     {
-      visibility: [0.2, 0.65],
+      visibility: [0.2, 0.55],
       type: "seek",
       frames: [0, 72],
     },
