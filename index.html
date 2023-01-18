@@ -17,35 +17,38 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body style="margin: 0; background-color: rgb(246, 220, 200)">
-    <div class="titlediv" id="titlediv">
-      <div class="lottiewrapper">
-        <lottie-player
-          id="titlelottie"
-          class="titlelottie"
-          src="Assets/Title Screen/Title Animation.json"
-          background="transparent"
-        ></lottie-player>
+    <div id="loading">Loading...</div>
+    <div id="content" style="display: none">
+      <div class="titlediv" id="titlediv">
+        <div class="lottiewrapper">
+          <lottie-player
+            id="titlelottie"
+            class="titlelottie"
+            src="Assets/Title Screen/Title Animation.json"
+            background="transparent"
+          ></lottie-player>
+        </div>
       </div>
-    </div>
-    <div class="fullscreencaption">
-      <p class="f2text1">
-        On a bright sunny day in the jungle, Manny the elephant was feeling
-        lonely and wanted to make friends as he had none. He spots a rabbit,
-        monkey and frog playing ball.
-      </p>
-    </div>
-    <div class="f2div" id="f2div">
-      <div class="lottiewrapper" onmousedown="footballsound.play()">
-        <lottie-player
-          id="f2lottie"
-          class="f2lottie"
-          src="Assets/Frame 2/Frame 2.json"
-        ></lottie-player>
+      <div class="fullscreencaption">
+        <p class="f2text1">
+          On a bright sunny day in the jungle, Manny the elephant was feeling
+          lonely and wanted to make friends as he had none. He spots a rabbit,
+          monkey and frog playing ball.
+        </p>
       </div>
-    </div>
-    <div class="f3div" id="f3div">
-      <div class="lottiewrapper">
-        <lottie-player id="f3lottie" class="f3lottie" src=""></lottie-player>
+      <div class="f2div" id="f2div">
+        <div class="lottiewrapper" onmousedown="footballsound.play()">
+          <lottie-player
+            id="f2lottie"
+            class="f2lottie"
+            src="Assets/Frame 2/Frame 2.json"
+          ></lottie-player>
+        </div>
+      </div>
+      <div class="f3div" id="f3div">
+        <div class="lottiewrapper">
+          <lottie-player id="f3lottie" class="f3lottie" src=""></lottie-player>
+        </div>
       </div>
     </div>
     <script src="animation.js"></script>

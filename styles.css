@@ -4,6 +4,16 @@ html {
   overflow-x: hidden;
   font-family: "Bubblegum Sans", cursive;
 }
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  text-align: center;
+}
+
 .titlediv {
   width: 100vw;
   height: 200vh;
