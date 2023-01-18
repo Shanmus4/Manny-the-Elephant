@@ -1,2 +1,2 @@
-var sound = new Audio();
-sound.src = "Assets/Frame 2/Football Kick.mp3";
+var footballsound = new Audio();
+footballsound.src = "Assets/Frame 2/Football Kick.mp3";
