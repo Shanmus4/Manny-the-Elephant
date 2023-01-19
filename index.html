@@ -25,6 +25,7 @@
           class="titlelottie"
           src="Assets/Title Screen/Title Animation.json"
           background="transparent"
+          @load="incrementCounter"
         ></lottie-player>
       </div>
     </div>
@@ -41,28 +42,22 @@
           id="f2lottie"
           class="f2lottie"
           src="Assets/Frame 2/Frame 2.json"
+          @load="incrementCounter"
         ></lottie-player>
       </div>
     </div>
 
     <script>
-      const animations = [titlelottie, f2lottie];
       let loadedAnimations = 0;
+      const totalAnimations = 2; // Update this with the total number of animations
       const loader = document.getElementById("loader");
 
-      function checkLoaded() {
-        for (const animation of animations) {
-          if (animation.isLoaded) {
-            loadedAnimations++;
-          }
-        }
-        if (loadedAnimations === animations.length) {
+      function incrementCounter() {
+        loadedAnimations++;
+        if (loadedAnimations === totalAnimations) {
           loader.style.display = "none";
-        } else {
-          setTimeout(checkLoaded, 50);
         }
       }
-      checkLoaded();
       LottieInteractivity.create({
         player: "#titlelottie",
         mode: "scroll",
