@@ -6,26 +6,8 @@ html {
 }
 
 #loader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-}
-
-.loading {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  color: #666;
-  text-align: center;
-}
-
-#content {
-  display: none;
+  display: block;
+  /* add any additional styles for the loader here */
 }
 
 .titlediv {
