@@ -275,6 +275,70 @@ LottieInteractivity.create({
     {
       state: "click",
       frames: [96, 108],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [107],
+      transition: "none",
+    },
+  ],
+});
+
+LottieInteractivity.create({
+  player: "#f3lottie",
+  mode: "scroll",
+  container: "#f3div",
+  actions: [
+    {
+      visibility: [0, 0.2],
+      type: "stop",
+      frames: [0],
+    },
+    {
+      visibility: [0.2, 0.55],
+      type: "seek",
+      frames: [0, 48],
+    },
+  ],
+});
+LottieInteractivity.create({
+  player: "#f3lottie",
+  mode: "chain",
+  container: "#f3div",
+
+  actions: [
+    {
+      state: "click",
+      frames: [48, 61],
+      transition: "onComplete",
+    },
+
+    {
+      state: "click",
+      frames: [61, 62],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [62, 63],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [63, 64],
+      transition: "onComplete",
+    },
+
+    {
+      state: "click",
+      frames: [64, 96],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [95],
+      transition: "none",
     },
   ],
 });

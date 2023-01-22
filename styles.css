@@ -5,11 +5,6 @@ html {
   font-family: "Bubblegum Sans", cursive;
 }
 
-#loader {
-  display: block;
-  /* add any additional styles for the loader here */
-}
-
 .titlediv {
   width: 100vw;
   height: 200vh;
@@ -26,7 +21,6 @@ html {
 .f2div {
   width: 100vw;
   height: 200vh;
-  background-color: aqua;
   position: relative;
 }
 
@@ -43,4 +37,16 @@ html {
   font-size: 2vw;
   text-align: center;
   padding: 2vw;
+}
+
+.f3div {
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+}
+
+.f4div {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }

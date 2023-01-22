@@ -13,11 +13,10 @@
     <link href="Assets/Favicon/hero Icon-1.png" rel="apple-touch-icon" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body style="margin: 0; background-color: rgb(246, 220, 200)">
-    <div id="loader"></div>
     <div class="titlediv" id="titlediv">
       <div class="lottiewrapper">
         <lottie-player
@@ -25,7 +24,6 @@
           class="titlelottie"
           src="Assets/Title Screen/Title Animation.json"
           background="transparent"
-          @load="incrementCounter"
         ></lottie-player>
       </div>
     </div>
@@ -42,96 +40,31 @@
           id="f2lottie"
           class="f2lottie"
           src="Assets/Frame 2/Frame 2.json"
-          @load="incrementCounter"
+        ></lottie-player>
+      </div>
+    </div>
+    <div class="f3div" id="f3div">
+      <div class="lottiewrapper">
+        <lottie-player
+          id="f3lottie"
+          class="f3lottie"
+          src="Assets/Frame 4/Frame 4.json"
+        ></lottie-player>
+      </div>
+    </div>
+    <div class="f4div" id="f4div">
+      <div class="lottiewrapper">
+        <lottie-player
+          id="f4lottie"
+          class="f4lottie"
+          src="Assets/Frame 5/Frame 5.json"
+          loop
+          autoplay
         ></lottie-player>
       </div>
     </div>
 
-    <script>
-      let loadedAnimations = 0;
-      const totalAnimations = 2; // Update this with the total number of animations
-      const loader = document.getElementById("loader");
-
-      function incrementCounter() {
-        loadedAnimations++;
-        if (loadedAnimations === totalAnimations) {
-          loader.style.display = "none";
-        }
-      }
-      LottieInteractivity.create({
-        player: "#titlelottie",
-        mode: "scroll",
-        container: "#titlediv",
-        actions: [
-          {
-            visibility: [0, 0.3],
-            type: "stop",
-            frames: [0],
-          },
-          {
-            visibility: [0.3, 1.0],
-            type: "seek",
-            frames: [0, 120],
-          },
-        ],
-      });
-
-      LottieInteractivity.create({
-        player: "#f2lottie",
-        mode: "scroll",
-        container: "#f2div",
-        actions: [
-          {
-            visibility: [0, 0.2],
-            type: "stop",
-            frames: [0],
-          },
-          {
-            visibility: [0.2, 0.55],
-            type: "seek",
-            frames: [0, 72],
-          },
-        ],
-      });
-
-      LottieInteractivity.create({
-        player: "#f2lottie",
-        mode: "chain",
-        container: "#f2div",
-
-        actions: [
-          {
-            state: "click",
-            frames: [72, 84],
-            transition: "onComplete",
-          },
-          {
-            state: "click",
-            frames: [84, 96],
-            transition: "onComplete",
-          },
-          {
-            state: "click",
-            frames: [96, 108],
-            transition: "onComplete",
-          },
-          {
-            state: "click",
-            frames: [72, 84],
-            transition: "onComplete",
-          },
-          {
-            state: "click",
-            frames: [84, 96],
-            transition: "onComplete",
-          },
-          {
-            state: "click",
-            frames: [96, 108],
-            transition: "onComplete",
-          },
-        ],
-      });
-    </script>
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
   </body>
 </html>
