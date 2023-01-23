@@ -107,6 +107,7 @@ html {
   background: rgb(143, 81, 54);
   transition: 1s;
 }
+
 .btn:active {
   background: rgb(96, 55, 37);
 }
