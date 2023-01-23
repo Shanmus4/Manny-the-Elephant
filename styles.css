@@ -50,3 +50,11 @@ html {
   height: 100vh;
   position: relative;
 }
+
+.feedbackdiv {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
