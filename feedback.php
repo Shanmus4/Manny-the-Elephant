@@ -6,7 +6,6 @@ $username = "sql12592661";
 $password = "Cs8cPVJT6b";
 $dbname = "sql12592661";
 
-echo "connected";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -19,12 +18,21 @@ $email = $_POST['email'];
 $feedback = $_POST['feedback'];
 
 $sql = "INSERT INTO mannyfeedback (name, email, feedback) VALUES ('$name', '$email', '$feedback')";
-$conn->query($sql);
 
-
-
-if ($conn->query($sql) === TRUE) {
-    echo "Feedback submitted successfully!";
+if ($conn->query($sql) === TRUE) { ?>
+    <div style=" height: 100vh;
+                              width: 100vw;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;">
+        <p style="color: rgb(143, 81, 54);
+                          font-size: 2vw;
+                          text-align: center;
+                          padding: 2vw;">
+            Thank you for the feedback!
+        </p>
+    </div>
+    <?php
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

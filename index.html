@@ -14,6 +14,8 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body style="margin: 0; background-color: rgb(246, 220, 200)">
@@ -64,15 +66,43 @@
       </div>
     </div>
 
-    <div class="feedbackdiv" id="feedbackdiv">
-      <form action="feedback.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br /><br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br /><br />
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback" name="feedback"></textarea><br /><br />
-        <input type="submit" value="Submit" />
+    <div class="user">
+      <header class="user__header">
+        <h1 class="user__title">Feedback</h1>
+      </header>
+
+      <form class="form" action="feedback.php" method="POST">
+        <div class="form__group">
+          <input
+            type="text"
+            placeholder="Username"
+            class="form__input"
+            id="name"
+            name="name"
+          />
+        </div>
+
+        <div class="form__group">
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__input"
+            id="email"
+            name="email"
+          />
+        </div>
+
+        <div class="form__group">
+          <input
+            type="text"
+            placeholder="Feedback"
+            class="form__input"
+            id="feedback"
+            name="feedback"
+          />
+        </div>
+
+        <button class="btn" type="submit" value="submit">Send</button>
       </form>
     </div>
 

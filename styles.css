@@ -5,6 +5,10 @@ html {
   font-family: "Bubblegum Sans", cursive;
 }
 
+* {
+  font-family: "Bubblegum Sans", cursive;
+}
+
 .titlediv {
   width: 100vw;
   height: 200vh;
@@ -47,14 +51,84 @@ html {
 
 .f4div {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   position: relative;
 }
 
-.feedbackdiv {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+.user {
+  width: 90%;
+  max-width: 640px;
+  margin: 10vh auto;
+}
+.user__header {
+  text-align: center;
+  opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  animation: arrive 500ms ease-in-out 0.7s forwards;
+}
+.user__title {
+  font-size: 24px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: rgb(143, 81, 54);
+}
+
+.form {
+  margin-top: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  animation: arrive 500ms ease-in-out 0.9s forwards;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  transition: 0.3s;
+}
+.form__input:focus {
+  background: rgb(240, 226, 214);
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 1vw;
+  appearance: none;
+  outline: 0;
+  border: 0;
+  color: white;
+  background: rgb(143, 81, 54);
+  transition: 1s;
+}
+.btn:active {
+  background: rgb(96, 55, 37);
+}
+
+@keyframes arrive {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
