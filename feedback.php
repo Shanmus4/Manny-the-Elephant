@@ -1,8 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "id20194825_mannyuser";
-$password = "Sunrise!12345";
-$dbname = "id20194825_manny";
+/*$servername = "sql12.freesqldatabase.com";
+$username = "sql12592661";
+$password = "Cs8cPVJT6b";
+$dbname = "sql12592661";*/
+
+$servername = "sql109.byetcluster.com";
+$username = "epiz_33449757";
+$password = "O6beDg6eGmxAzBd";
+$dbname = "epiz_33449757_manny";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -26,6 +31,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO mannyfeedback (name, email, feedback) VALUES ('$name', '$email', '$feedback')";
 
 if ($conn->query($sql) === TRUE) {
+
 
 
     ?>
