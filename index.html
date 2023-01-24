@@ -68,17 +68,24 @@
 
     <div class="user">
       <header class="user__header">
-        <h1 class="user__title">Feedback</h1>
+        <h1 class="user__title">Please leave a Feedback</h1>
       </header>
 
-      <form class="form" action="feedback.php" method="POST">
+      <form
+        class="form"
+        action="mannyelephant.000webhostapp.com"
+        method="POST"
+        data-netlify="TRUE"
+      >
         <div class="form__group">
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Name"
             class="form__input"
             id="name"
             name="name"
+            required
+            minlength="4"
           />
         </div>
 
@@ -89,6 +96,7 @@
             class="form__input"
             id="email"
             name="email"
+            required
           />
         </div>
 
@@ -99,6 +107,8 @@
             class="form__input"
             id="feedback"
             name="feedback"
+            required
+            minlength="5"
           />
         </div>
 
