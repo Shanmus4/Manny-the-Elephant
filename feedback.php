@@ -12,9 +12,11 @@ $dbname = "epiz_33449757_manny";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-/*$name = $_POST['name'];
+$name = $_POST['name'];
 $email = $_POST['email'];
 $feedback = $_POST['feedback'];
+
+/*
 $to = "s4.shanmugsundar@gmail.com";
 $subject = "Manny the Elephant Feedback";
 $headers = "From: " . $email;
