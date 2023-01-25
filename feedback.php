@@ -12,15 +12,14 @@ $dbname = "epiz_33449757_manny";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$name = $_POST['name'];
+/*$name = $_POST['name'];
 $email = $_POST['email'];
 $feedback = $_POST['feedback'];
-
 $to = "s4.shanmugsundar@gmail.com";
 $subject = "Manny the Elephant Feedback";
 $headers = "From: " . $email;
 $txt = "You have received a feedback from" . $name . ".\n\n" . $feedback;
-mail($to, $subject, $txt, $headers);
+mail($to, $subject, $txt, $headers);*/
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
