@@ -27,9 +27,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$sql = "INSERT INTO mannyfeedback (name, email, feedback) VALUES ($name, $email, $feedback)";
 
-
-$sql = "INSERT INTO mannyfeedback (name, email, feedback) VALUES ('$name', '$email', '$feedback')";
 
 if ($conn->query($sql) === TRUE) {
     ?>
