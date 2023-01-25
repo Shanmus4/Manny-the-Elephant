@@ -55,6 +55,12 @@ html {
   position: relative;
 }
 
+.f5div {
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+}
+
 .user {
   width: 90%;
   max-width: 640px;
@@ -92,9 +98,11 @@ html {
   outline: 0;
   transition: 0.3s;
 }
+
 .form__input:focus {
   background: rgb(240, 226, 214);
 }
+
 .btn {
   display: block;
   width: 100%;

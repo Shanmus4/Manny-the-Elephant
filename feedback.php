@@ -30,9 +30,6 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO mannyfeedback (name, email, feedback) VALUES ('$name', '$email', '$feedback')";
 
 if ($conn->query($sql) === TRUE) {
-
-
-
     ?>
     <link rel="stylesheet" href="styles.css" />
     <div class="fullscreencaption" style="max-height: 100%">

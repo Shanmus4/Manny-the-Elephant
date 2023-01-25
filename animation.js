@@ -302,6 +302,7 @@ LottieInteractivity.create({
     },
   ],
 });
+
 LottieInteractivity.create({
   player: "#f3lottie",
   mode: "chain",
