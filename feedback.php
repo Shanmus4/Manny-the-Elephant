@@ -5,17 +5,22 @@ $password = "O6beDg6eGmxAzBd";
 $dbname = "epiz_33449757_manny";
 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-$name = $_POST['names'];
-$email = $_POST['email'];
-$feedback = $_POST['feedback'];
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO mannyfeedback (names, email, feedback) VALUES ('$name', '$email', '$feedback')";
+$name = $_POST['names'];
+$email = $_POST['email'];
+$feedback = $_POST['feedback'];
+
+$name = filter_var($name, FILTER_SANITIZE_STRING);
+$email = filter_var($email, FILTER_SANITIZE_STRING);
+$feedback = filter_var($feedback, FILTER_SANITIZE_STRING);
+
+
+$sql = "INSERT DELAYED INTO mannyfeedback (names, email, feedback) VALUES ('$name', '$email', '$feedback')";
 
 echo $name;
 echo "$sql";
