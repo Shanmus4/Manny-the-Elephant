@@ -4,6 +4,10 @@ $username = "epiz_33449757";
 $password = "O6beDg6eGmxAzBd";
 $dbname = "epiz_33449757_manny";
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 

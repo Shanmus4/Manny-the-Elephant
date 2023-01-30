@@ -343,3 +343,40 @@ LottieInteractivity.create({
     },
   ],
 });
+
+LottieInteractivity.create({
+  player: "#f6lottie",
+  mode: "scroll",
+  container: "#f6div",
+  actions: [
+    {
+      visibility: [0, 0.2],
+      type: "stop",
+      frames: [0],
+    },
+    {
+      visibility: [0.2, 0.45],
+      type: "seek",
+      frames: [0, 36],
+    },
+  ],
+});
+
+LottieInteractivity.create({
+  player: "#f6lottie",
+  mode: "chain",
+  container: "#f6div",
+
+  actions: [
+    {
+      state: "click",
+      frames: [36, 84],
+      transition: "onComplete",
+    },
+    {
+      state: "click",
+      frames: [83],
+      transition: "none",
+    },
+  ],
+});
