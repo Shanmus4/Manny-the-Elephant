@@ -32,7 +32,7 @@ echo "$sql";
 if ($conn->query($sql) === TRUE) {
     ?>
     <link rel="stylesheet" href="styles.css" />
-    <div class="fullscreencaption" style="max-height: 100%">
+    <div class="fullscreencaption" style="max-height: 100%;">
         <p class="f2text1">
             Thank you for the feedback!
         </p>

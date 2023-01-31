@@ -1,3 +1,11 @@
+setTimeout(function () {
+  document.querySelector(".loader").style.opacity = "0";
+  setTimeout(function () {
+    document.querySelector(".loader").style.display = "none";
+    document.querySelector(".content").style.display = "block";
+  }, 200);
+}, 4000);
+
 //first audio for football
 var footballsound = new Audio();
 footballsound.src = "Assets/Frame 2/Football Kick.mp3";

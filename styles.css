@@ -9,9 +9,51 @@ html {
   font-family: "Bubblegum Sans", cursive;
 }
 
+::-webkit-scrollbar {
+  width: 6.5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(255, 224, 201);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(135, 84, 59);
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(143, 81, 54);
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loadlottiewrap {
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  display: none;
+}
+
 .titlediv {
   width: 100vw;
   height: 200vh;
+  transform: translate3d(0, 800px, 0);
+  animation: arrive 900ms ease-in-out 0.6s forwards;
 }
 
 .lottiewrapper {
@@ -29,7 +71,7 @@ html {
 }
 
 .fullscreencaption {
-  height: 200vh;
+  height: 140vh;
   width: 100vw;
   position: relative;
 }
@@ -86,7 +128,7 @@ html {
   text-align: center;
   opacity: 0;
   transform: translate3d(0, 500px, 0);
-  animation: arrive 500ms ease-in-out 0.7s forwards;
+  animation: arrive 500ms ease-in-out 1.9s forwards;
 }
 .user__title {
   font-size: 24px;
@@ -101,8 +143,8 @@ html {
   border-radius: 6px;
   overflow: hidden;
   opacity: 0;
-  transform: translate3d(0, 500px, 0);
-  animation: arrive 500ms ease-in-out 0.9s forwards;
+  transform: translate3d(0, 800px, 0);
+  animation: arrive 900ms ease-in-out 1.9s forwards;
 }
 
 .form__input {
@@ -113,6 +155,13 @@ html {
   border: 0;
   outline: 0;
   transition: 0.3s;
+  color: rgb(134, 84, 59);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(204, 134, 99);
+  opacity: 1; /* Firefox */
 }
 
 .form__input:focus {
@@ -144,16 +193,5 @@ html {
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes move {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
   }
 }
