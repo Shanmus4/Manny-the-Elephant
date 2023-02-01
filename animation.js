@@ -357,7 +357,7 @@ LottieInteractivity.create({
     {
       visibility: [0.2, 0.45],
       type: "seek",
-      frames: [0, 36],
+      frames: [0, 39],
     },
   ],
 });
@@ -370,12 +370,12 @@ LottieInteractivity.create({
   actions: [
     {
       state: "click",
-      frames: [36, 84],
+      frames: [39, 120],
       transition: "onComplete",
     },
     {
       state: "click",
-      frames: [83],
+      frames: [119],
       transition: "none",
     },
   ],

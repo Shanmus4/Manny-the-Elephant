@@ -1,10 +1,15 @@
-setTimeout(function () {
+/*setTimeout(function () {
   document.querySelector(".loader").style.opacity = "0";
   setTimeout(function () {
     document.querySelector(".loader").style.display = "none";
     document.querySelector(".content").style.display = "block";
   }, 200);
-}, 2000);
+}, 2000);*/
+
+window.addEventListener("load", () => {
+  document.querySelector(".loader").style.display = "none";
+  document.querySelector(".content").style.display = "block";
+});
 
 //first audio for football
 var footballsound = new Audio();
@@ -45,4 +50,13 @@ f5audio.src = "Assets/Frame 6/tiger growl.wav";
 
 f5sounddiv.addEventListener("mouseover", function () {
   f5audio.play();
+});
+
+//audio animals help shout
+
+var f6sounddiv = document.getElementById("f6div");
+f6sounddiv.addEventListener("click", function () {
+  var f6audio = new Audio();
+  f6audio.src = "Assets/Frame 7/animals shout.mp3";
+  f6audio.play();
 });
