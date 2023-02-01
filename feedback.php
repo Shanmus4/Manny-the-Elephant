@@ -8,6 +8,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$name = $_POST['names'];
+$email = $_POST['email'];
+$feedback = $_POST['feedback'];
+
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -15,16 +19,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$name = $_POST['names'];
-$email = $_POST['email'];
-$feedback = $_POST['feedback'];
 
-$name = filter_var($name, FILTER_SANITIZE_STRING);
-$email = filter_var($email, FILTER_SANITIZE_STRING);
-$feedback = filter_var($feedback, FILTER_SANITIZE_STRING);
-
-
-$sql = "INSERT DELAYED INTO mannyfeedback (names, email, feedback) VALUES ('$name', '$email', '$feedback')";
+$sql = "INSERT INTO mannyfeedback (names, email, feedback) VALUES ('$name', '$email', '$feedback')";
 
 echo $name;
 echo "$sql";
