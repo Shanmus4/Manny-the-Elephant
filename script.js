@@ -6,10 +6,14 @@
   }, 200);
 }, 2000);*/
 
-window.addEventListener("load", () => {
+if (document.readyState == "complete") {
+  loaderclose();
+}
+
+function loaderclose() {
   document.querySelector(".loader").style.display = "none";
   document.querySelector(".content").style.display = "block";
-});
+}
 
 //first audio for football
 var footballsound = new Audio();
