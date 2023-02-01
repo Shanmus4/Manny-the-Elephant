@@ -2,7 +2,7 @@
 $servername = "sql109.epizy.com";
 $username = "epiz_33449757";
 $password = "O6beDg6eGmxAzBd";
-$dbname = "epiz_33449757_manny";
+$dbname = "epiz_33449757_mannyy";
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -18,7 +18,6 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 
 $sql = "INSERT INTO mannyfeedback (names, email, feedback) VALUES ('$name', '$email', '$feedback')";
 
