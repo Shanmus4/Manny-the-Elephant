@@ -41,6 +41,10 @@ html {
   position: absolute;
 }
 
+.content {
+  display: none;
+}
+
 .loadlottiewrap {
   width: 30%;
   height: 30%;

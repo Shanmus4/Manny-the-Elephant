@@ -1,18 +1,10 @@
-/*setTimeout(function () {
+setTimeout(function () {
   document.querySelector(".loader").style.opacity = "0";
   setTimeout(function () {
     document.querySelector(".loader").style.display = "none";
     document.querySelector(".content").style.display = "block";
   }, 200);
-}, 2000);*/
-
-function hideLoader() {
-  $("#loader").hide();
-}
-
-$(window).ready(hideLoader);
-
-setTimeout(hideLoader, 20 * 1000);
+}, 2000);
 
 //first audio for football
 var footballsound = new Audio();
