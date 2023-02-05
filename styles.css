@@ -119,6 +119,12 @@ html {
   position: relative;
 }
 
+.f7div {
+  width: 100vw;
+  height: 160vh;
+  position: relative;
+}
+
 .user {
   width: 90%;
   max-width: 640px;
