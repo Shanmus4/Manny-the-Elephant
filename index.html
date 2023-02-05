@@ -1,196 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manny The Elephant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js"></script>
+
+    <link href="Assets/Favicon/hero Icon-1.png" rel="apple-touch-icon" />
+    <title>Storytime</title>
     <link
       href="Assets/Favicon/hero Icon.png"
       rel="shortcut icon"
       type="image/x-icon"
     />
-    <link href="Assets/Favicon/hero Icon-1.png" rel="apple-touch-icon" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
   </head>
 
-  <body style="margin: 0; background-color: rgb(244, 206, 189)">
-    <div class="loader" id="loader">
-      <p>Press 'F11' for fullscreen</p>
-      <div class="loadlottiewrap">
-        <lottie-player
-          id="loadlottie"
-          class="loadlottie"
-          src="Assets/Loader/Loader elephant.json"
-          background="transparent"
-          loop
-          autoplay
-        ></lottie-player>
+  <body id="body-pd" style="margin: 0; background-color: rgb(255, 248, 244)">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
       </div>
-      <p>Loading...</p>
-
-      <p>
-        <br /><br /><br /><br />
-        Scroll to play the story
-      </p>
-    </div>
-    <div class="content">
-      <div class="titlediv" id="titlediv">
-        <div class="lottiewrapper">
-          <lottie-player
-            id="titlelottie"
-            class="titlelottie"
-            src="Assets/Title Screen/Title Animation.json"
-            background="transparent"
-          ></lottie-player>
-        </div>
-      </div>
-
-      <div class="fullscreencaption">
-        <div class="textwrap">
-          <p class="f2text1">
-            On a bright sunny day in the jungle, Manny the elephant was feeling
-            lonely and wanted to make friends as he had none. He spots a rabbit,
-            monkey and frog playing ball.
-          </p>
-        </div>
-      </div>
-
-      <div class="f2div" id="f2div">
-        <div class="lottiewrapper" onmousedown="footballsound.play()">
-          <lottie-player
-            id="f2lottie"
-            class="f2lottie"
-            src="Assets/Frame 2/Frame 2.json"
-          ></lottie-player>
-        </div>
-      </div>
-
-      <div class="f3div" id="f3div">
-        <div class="lottiewrapper">
-          <lottie-player
-            id="f3lottie"
-            class="f3lottie"
-            src="Assets/Frame 4/Frame 4.json"
-          ></lottie-player>
-        </div>
-      </div>
-
-      <div class="f4div" id="f4div">
-        <div class="lottiewrapper">
-          <lottie-player
-            id="f4lottie"
-            class="f4lottie"
-            src="Assets/Frame 5/Frame 5.json"
-            loop
-            autoplay
-          ></lottie-player>
-        </div>
-      </div>
-
-      <div class="f5div" id="f5div">
-        <div class="lottiewrapper">
-          <lottie-player
-            id="f5lottie"
-            class="f5lottie"
-            src="Assets/Frame 6/Frame 6.json"
-            loop
-            autoplay
-          ></lottie-player>
-        </div>
-      </div>
-
-      <div class="f6div" id="f6div">
-        <div class="lottiewrapper">
-          <lottie-player
-            id="f6lottie"
-            class="f6lottie"
-            src="Assets/Frame 7/Frame 7.json"
-          ></lottie-player>
-        </div>
-      </div>
-
-      <div class="fullscreencaption">
-        <div class="textwrap">
-          <p class="f2text1">
-            The rabbit, frog and monkey understood that they were wrong about
-            Manny, and made friends with him. They will be forever grateful to
-            him for saving their lives
-          </p>
-        </div>
-      </div>
-
-      <div class="f7div" id="f7div">
-        <div class="lottiewrapper">
-          <lottie-player
-            id="f7lottie"
-            class="f7lottie"
-            src="Assets/Frame 8/Frame 8.json"
-            loop
-            autoplay
-          ></lottie-player>
-        </div>
-      </div>
-
-      <!--form code begins here-->
-
-      <div class="user">
-        <header class="user__header">
-          <h1 class="user__title">Please leave a Feedback</h1>
-        </header>
-
-        <form
-          class="form"
-          action="https://mannytheelephant.infinityfreeapp.com/feedback.php"
-          method="post"
-          target="_blank"
-        >
-          <div class="form__group">
-            <input
-              type="text"
-              placeholder="Name"
-              class="form__input"
-              name="names"
-              required
-              minlength="4"
-            />
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <a href="#" class="nav_logo">
+            <i class="bx bx-layer nav_logo-icon"></i>
+            <span class="nav_logo-name">BBBootstrap</span>
+          </a>
+          <div class="nav_list">
+            <a href="#" class="nav_link active">
+              <i class="bx bx-grid-alt nav_icon"></i>
+              <span class="nav_name">Dashboard</span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class="bx bx-user nav_icon"></i>
+              <span class="nav_name">Users</span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class="bx bx-message-square-detail nav_icon"></i>
+              <span class="nav_name">Messages</span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class="bx bx-bookmark nav_icon"></i>
+              <span class="nav_name">Bookmark</span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class="bx bx-folder nav_icon"></i>
+              <span class="nav_name">Files</span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class="bx bx-bar-chart-alt-2 nav_icon"></i>
+              <span class="nav_name">Stats</span>
+            </a>
           </div>
-
-          <div class="form__group">
-            <input
-              type="email"
-              placeholder="Email"
-              class="form__input"
-              name="email"
-              required
-            />
-          </div>
-
-          <div class="form__group">
-            <input
-              type="text"
-              placeholder="Feedback"
-              class="form__input"
-              name="feedback"
-              required
-              minlength="5"
-            />
-          </div>
-
-          <input class="btn" id="sendbtn" type="submit" value="Send Feedback" />
-        </form>
-      </div>
+        </div>
+        <a href="#" class="nav_link">
+          <i class="bx bx-log-out nav_icon"></i>
+          <span class="nav_name">SignOut</span>
+        </a>
+      </nav>
     </div>
 
-    <script src="script.js"></script>
-    <script src="animation.js"></script>
+    <div class="container py-3">
+      <a href="index.html">
+        <img class="favicon" src="Assets/Favicon/hero Icon.png"
+      /></a>
+      <div class="py-5">
+        <h3 style="color: rgb(143, 81, 54)" class="font-weight-bold mb-0">
+          Story Time
+        </h3>
+        <p style="color: rgb(115, 84, 71)" class="font-italic mb-4">
+          Select a story from the list
+        </p>
+        <div class="row">
+          <div class="col-lg-6 mb-3 mb-lg-0">
+            <a style="text-decoration: none" href="manny.html">
+              <div class="hover hover-1 text-white rounded">
+                <img src="Assets/Homepage/Elephant card.jpg" alt="" />
+                <div class="hover-overlay"></div>
+                <div class="hover-1-content px-3 py-0">
+                  <p class="hover-1-description font-weight-light mb-0">
+                    Story about Manny the Elephant and his friends in the forest
+                  </p>
+                </div>
+              </div>
+              <h3 class="hover-1-title font-weight-bold mb-0 mt-4">
+                <span style="color: rgb(143, 81, 54)" class="font-weight-light"
+                  >Manny the Elephant</span
+                >
+              </h3>
+            </a>
+          </div>
+
+          <div class="col-lg-6 mb-3 mb-lg-0">
+            <div class="hover hover-1 text-white rounded">
+              <img src="Assets/Homepage/card 2.jpg" alt="" />
+              <div class="hover-overlay"></div>
+              <div class="hover-1-content px-3 py-0">
+                <p class="hover-1-description font-weight-light mb-0">
+                  More stories to be uploaded soon
+                </p>
+              </div>
+            </div>
+            <h3 class="hover-1-title font-weight-bold mb-0 mt-4">
+              <span style="color: rgb(143, 81, 54)" class="font-weight-light"
+                >More to come....</span
+              >
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
