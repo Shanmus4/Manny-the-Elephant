@@ -3,15 +3,19 @@
 document.getElementById("discover").addEventListener("click", function () {
   document.getElementById("discoverpage").style.display = "block";
   document.getElementById("feedbackpage").style.display = "none";
-  //document.getElementById("feedbackpage").style.display = "block";
-  //document.getElementById("feedbackpage").style.display = "block";
+  document.getElementById("instructionpage").style.display = "none";
 });
 
 document.getElementById("feedbacks").addEventListener("click", function () {
   document.getElementById("discoverpage").style.display = "none";
   document.getElementById("feedbackpage").style.display = "block";
-  //document.getElementById("feedbackpage").style.display = "block";
-  //document.getElementById("feedbackpage").style.display = "block";
+  document.getElementById("instructionpage").style.display = "none";
+});
+
+document.getElementById("instruction").addEventListener("click", function () {
+  document.getElementById("discoverpage").style.display = "none";
+  document.getElementById("feedbackpage").style.display = "none";
+  document.getElementById("instructionpage").style.display = "block";
 });
 
 document.addEventListener("DOMContentLoaded", function (event) {

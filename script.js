@@ -6,7 +6,7 @@ setTimeout(function () {
     document.querySelector(".loader").style.display = "none";
     document.querySelector(".content").style.display = "block";
   }, 200);
-}, 2000);
+}, 6000);
 
 //first audio for football
 var footballsound = new Audio();
