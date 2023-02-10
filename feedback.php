@@ -10,9 +10,9 @@ $dbname = "epiz_33449757_mannyy";
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); */
 
-$name = $_POST['names'];
-$email = $_POST['email'];
-$feedback = $_POST['feedback'];
+$name = $_GET['names'];
+$email = $_GET['email'];
+$feedback = $_GET['feedback'];
 $ipaddr = $_SERVER['REMOTE_ADDR'];
 
 
